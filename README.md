@@ -1,16 +1,16 @@
-# [Rickroll Detector](https://pggamer2.github.io/Rickroll-Detector/)
-Detect any Rickroll in some seconds!
+# [Kids Cheering Detector](https://pggamer2.github.io/Rickroll-Detector/)
+Detect any [KC SFX] in some seconds!
 
-*I had to Rickroll myself multiple times to make this*.
+*I had to check a lot of videos and callouts to make this.*.
 
 ## Q&A
 
-### What's a Rickroll?
-Everybody knows what it is. There's also a [Wikipedia](https://wikipedia.org/wiki/Rickrolling) and a [Know Your Meme](https://knowyourmeme.com/memes/rickroll) article.
+### What is [KC SFX]?
+It means the kids cheering sound effect, The sound effect is this -->  [[https://soundeffects.fandom.com/wiki/Sound_Ideas,_CHILDREN,_CROWD_-_SMALL_STUDIO_AUDIENCE_OF_CHILDREN:_BIG_CHEER,_CHEERING_01]], And since it triggers some misophonic (Fear of certain sounds) people, I decided to make it.
 
 ### It doesn't detect *this* link! Can you add it?
 Sure. Report it in the issue tab or make a PR.
 
 ### How does it work?
-It basically detects if the video's ID is inside a "blacklist" contained inside *rickrolls.json*. Then it checks if the video's author is between another blacklist and after that, if nothing has been detected, it checks if the video's description and title contain the word "rickroll".
-Also, I added a "history" of previous rickrolls that have been detected by the user. These are stored using cookies.
+It basically detects if the video's ID is inside a "blacklist" contained inside *kcsfxs.json*. Then it checks if the video has a part where it uses the sound effect using timestamps between another blacklist and after that it also screenshots the part where the sound effect is played.
+Also, I added a "history" of previous kids cheers that have been detected by the user. These are stored using cookies.
