@@ -35,7 +35,7 @@ function isThisArickroll(rickLink) {
 	RickDetected = 0;
 	var rickYTid = youtubeParser(rickLink);
 	if (typeof(rickYTid) != 'string') RickDetected = -1;
-	readJSONfile("https://raw.githubusercontent.com/PGgamer2/Rickroll-Detector/main/rickrolls.json", function(callback) {
+	readJSONfile("https://raw.githubusercontent.com/PGgamer2/Rickroll-Detector/main/kcsfxs.json", function(callback) {
 		var totalLinks;
 		if (typeof(callback) != 'string') {
 			RickDetected = -3;
@@ -84,11 +84,11 @@ function isThisArickroll(rickLink) {
 					var vidDescription = videoInfos.items[0].snippet.description.replace(/ /g, '').toLowerCase();
 					
 					// Check if title contains these words
-					if (RickDetected == 0 && (vidTitle.indexOf("rickroll") !== -1 || vidTitle.indexOf("nevergonnagiveyouup") !== -1)) {
+					if (RickDetected == 0 && (vidTitle.indexOf("rickroll") !== -1 || vidTitle.indexOf("kidscheering") !== -1)) {
 						RickDetected = 2;
 					}
 					// Check if description contains these words
-					if (RickDetected == 0 && (vidDescription.indexOf("rickroll") !== -1 || vidDescription.indexOf("nevergonnagiveyouup") !== -1)) {
+					if (RickDetected == 0 && (vidDescription.indexOf("rickroll") !== -1 || vidDescription.indexOf("kidscheering") !== -1)) {
 						RickDetected = 2;
 					}
 				}
@@ -108,18 +108,18 @@ function DisplayRickRoll(ytID) {
 	lastYTid = ytID;
 	switch (RickDetected) {
 		case 1:
-			document.getElementById("rickornot").innerHTML = "A Rickroll has been detected!";
+			document.getElementById("rickornot").innerHTML = "The [KC SFX] has been detected!";
 			document.getElementById("rickornot").style.color = "red";
 			document.getElementById("addToHistory").style.display = "none";
 			addToHistory(ytID);
 			break;
 		case 2:
-			document.getElementById("rickornot").innerHTML = "This is probably a Rickroll.";
+			document.getElementById("rickornot").innerHTML = "This probably has the [KC SFX].";
 			document.getElementById("rickornot").style.color = "yellow";
 			document.getElementById("addToHistory").style.display = "";
 			break;
 		case 0:
-			document.getElementById("rickornot").innerHTML = "This URL seems Rickroll-free! You're safe.";
+			document.getElementById("rickornot").innerHTML = "This URL seems [KC SFX]-free! You're safe.";
 			document.getElementById("rickornot").style.color = "lightgreen";
 			document.getElementById("addToHistory").style.display = "";
 			break;
