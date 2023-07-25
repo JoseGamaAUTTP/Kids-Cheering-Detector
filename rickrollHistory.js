@@ -55,7 +55,7 @@ function removeFromHistory(url) {
 }
 
 function addToHistory(ytID) {
-	var url = "https://youtu.be/" + ytID;
+	var url = "https://youtube/watch?v=" + ytID;
 	if (rickrollHistory.indexOf(url) === -1) rickrollHistory.push(url);
 	
 	setCookie("rickrollHistory", JSON.stringify(rickrollHistory));
