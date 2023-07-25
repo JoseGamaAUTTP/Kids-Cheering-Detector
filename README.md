@@ -1,7 +1,7 @@
 # [Kids Cheering Detector](https://pggamer2.github.io/Rickroll-Detector/)
 Detect any [KC SFX] in some seconds!
 
-*I had to check a lot of videos and callouts to make this.*.
+*I had to check a lot of videos and callouts to make this.*
 
 ## Q&A
 
