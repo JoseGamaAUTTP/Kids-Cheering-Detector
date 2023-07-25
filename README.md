@@ -6,7 +6,7 @@ Detect any [KC SFX] in some seconds!
 ## Q&A
 
 ### What is [KC SFX]?
-It means the kids cheering sound effect, The sound effect is this -->  [[https://soundeffects.fandom.com/wiki/Sound_Ideas,_CHILDREN,_CROWD_-_SMALL_STUDIO_AUDIENCE_OF_CHILDREN:_BIG_CHEER,_CHEERING_01]], And since it triggers some misophonic (Fear of certain sounds) people, I decided to make it.
+It means the kids cheering sound effect, The sound effect is this --> https://tinyurl.com/kcsfx, And since it triggers some misophonic (Fear of certain sounds) people, I decided to make it.
 
 ### It doesn't detect *this* link! Can you add it?
 Sure. Report it in the issue tab or make a PR.
